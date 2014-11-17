@@ -8,7 +8,7 @@ import javax.persistence.NamedQuery;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
-@XmlRootElement
+@XmlRootElement(name="verduras")
 @NamedQuery(name = Verdura.FIND_ALL,query = "SELECT v FROM Verdura v")
 public class Verdura {
 	 public static final String FIND_ALL= "Verdura.findAll";
